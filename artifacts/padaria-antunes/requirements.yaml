@@ -1,0 +1,30 @@
+packages:
+  "framer-motion": "For premium smooth scroll and reveal animations"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility function to efficiently merge Tailwind CSS classes"
+
+images:
+  - path: "artifacts/padaria-antunes/public/images/hero-bg.png"
+    description: "Warm artisan bakery interior with fresh bread on display and cozy, moody amber lighting, high quality premium food photography"
+    aspect_ratio: "16:9"
+  - path: "artifacts/padaria-antunes/public/images/prod-bread.png"
+    description: "Close-up of fresh artisan bread, crispy crust, french bread, rustic dark background, dramatic premium lighting"
+    aspect_ratio: "4:3"
+  - path: "artifacts/padaria-antunes/public/images/prod-savory.png"
+    description: "Delicious Brazilian savory pastries, beautifully presented on a dark slate board, warm moody aesthetic"
+    aspect_ratio: "4:3"
+  - path: "artifacts/padaria-antunes/public/images/prod-coffee.png"
+    description: "A beautiful cup of hot cappuccino with latte art next to fresh coffee beans, dark moody aesthetic, premium photography"
+    aspect_ratio: "4:3"
+  - path: "artifacts/padaria-antunes/public/images/prod-sweets.png"
+    description: "Gourmet sweet treats, rich cake slices, premium lighting, dark background"
+    aspect_ratio: "4:3"
+  - path: "artifacts/padaria-antunes/public/images/prod-sandwich.png"
+    description: "Gourmet grilled artisan sandwich on a wooden board, warm and appetizing, dark background"
+    aspect_ratio: "4:3"
+
+notes:
+  - Landing page is a single scrollable page
+  - All Call-to-Actions redirect to the specified WhatsApp link
+  - Using Lucide React for icons
+  - Framer motion used for entrance animations to give a premium feel

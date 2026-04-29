@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'Poppins', sans-serif;
+  --font-display: 'Open Sans', sans-serif;
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-border: hsl(var(--border));
+  --color-ring: hsl(var(--ring));
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 10%;
+
+  --primary: 0 100% 17%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 30 100% 98%;
+  --secondary-foreground: 0 0% 10%;
+
+  --accent: 42 72% 46%;
+  --accent-foreground: 0 0% 100%;
+
+  --muted: 30 20% 96%;
+  --muted-foreground: 0 0% 40%;
+
+  --border: 0 0% 90%;
+  --ring: 42 72% 46%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased font-sans overflow-x-hidden;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+
+  p, span, li {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  small, caption {
+    font-family: 'Poppins', sans-serif;
+    @apply text-sm;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+  }
+
+  .font-body {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-whatsapp {
+    background: #25d366;
+    color: white;
+    border-radius: 9999px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+  }
+  .btn-whatsapp:hover {
+    background: #1fb855;
+  }
+}
